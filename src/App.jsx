@@ -8,7 +8,7 @@ function App() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/random")
+    fetch("http://localhost:3000/api/questions/random")
       .then((res) => res.json())
       .then(
         (data) => {
