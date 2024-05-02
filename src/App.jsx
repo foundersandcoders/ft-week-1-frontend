@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import config from "./config";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -8,7 +9,7 @@ function App() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/questions/random")
+    fetch(`${config.apiBaseUrl}/api/questions/random`)
       .then((res) => res.json())
       .then(
         (data) => {
