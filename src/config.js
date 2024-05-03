@@ -6,7 +6,7 @@ if (window.location.hostname === "localhost") {
   };
 } else {
   config = {
-    apiBaseUrl: "https://api.example.com",
+    apiBaseUrl: "http://18.168.254.104:3000",
   };
 }
 
